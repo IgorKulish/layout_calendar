@@ -27,10 +27,6 @@ $week: (
 $width-day-block: 100px;
 $basic-margin: 1px;
 
-body {
-  margin: 0;
-}
-
 .calendar {
   @include flex-row-wrap;
   margin: 100px auto;
@@ -44,11 +40,11 @@ body {
     border: 1px solid #000;
     text-align: center;
     transition: transform 0.5s, background-color 0.5s;
-  }
-  &:hover {
-    background-color: pink;
-    transform: translateY(-20px);
-    cursor: pointer;
+    &:hover {
+      background-color: pink;
+      transform: translateY(-20px);
+      cursor: pointer;
+    }
   }
 }
 
@@ -65,8 +61,8 @@ body {
   }
 }
 
-@each $day, $i in $week {
-  .calendar-#{day} div:first-child {
-    margin-left: #{100 * $i + $i}px;
+@each $day, $value in $week {
+  .calendar-#{$day} :first-child {
+    margin-left: $width-day-block * $value + $value;
   }
 }
