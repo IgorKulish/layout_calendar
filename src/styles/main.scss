@@ -8,6 +8,8 @@ $week: (
   sun: 6
 );
 
+$last-days: 28, 29, 30, 31;
+
 @mixin flex-row-wrap {
   display: flex;
   flex-direction: row;
@@ -32,6 +34,7 @@ $basic-margin: 1px;
   margin: 100px auto;
   max-width: calc(#{$width-day-block} * 8 + #{$basic-margin} * 6);
   div {
+    display: none;
     @include day-box-size;
     box-sizing: border-box;
     margin-right: 1px;
@@ -54,9 +57,12 @@ $basic-margin: 1px;
     @include day-box-font;
     content: "#{$i}";
   }
-  @if ($i > 29) {
-    .calendar div:nth-child(#{$i}) {
-      display: none;
+}
+
+@each $day in $last-days {
+  @for $days from 1 through $day {
+    .calendar-#{$day} div:nth-child(#{$days}) {
+      display: block;
     }
   }
 }
