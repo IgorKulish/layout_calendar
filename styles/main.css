@@ -1,6 +1,3 @@
-body {
-  margin: 0; }
-
 .calendar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,6 +11,7 @@ body {
   margin: 100px auto;
   max-width: calc(100px * 8 + 1px * 6); }
   .calendar div {
+    display: none;
     width: 100px;
     height: 100px;
     -webkit-box-sizing: border-box;
@@ -27,11 +25,11 @@ body {
     transition: background-color 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, background-color 0.5s;
     transition: transform 0.5s, background-color 0.5s, -webkit-transform 0.5s; }
-  .calendar:hover {
-    background-color: pink;
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-    cursor: pointer; }
+    .calendar div:hover {
+      background-color: pink;
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+      cursor: pointer; }
 
 .calendar div:nth-child(1)::before {
   line-height: 100px;
@@ -213,37 +211,385 @@ body {
   font-size: 30px;
   content: "30"; }
 
-.calendar div:nth-child(30) {
-  display: none; }
-
 .calendar div:nth-child(31)::before {
   line-height: 100px;
   font-family: Arial, sans-serif;
   font-size: 30px;
   content: "31"; }
 
-.calendar div:nth-child(31) {
-  display: none; }
+.calendar-28 div:nth-child(1) {
+  display: block; }
 
-.calendar-day div:first-child {
+.calendar-28 div:nth-child(2) {
+  display: block; }
+
+.calendar-28 div:nth-child(3) {
+  display: block; }
+
+.calendar-28 div:nth-child(4) {
+  display: block; }
+
+.calendar-28 div:nth-child(5) {
+  display: block; }
+
+.calendar-28 div:nth-child(6) {
+  display: block; }
+
+.calendar-28 div:nth-child(7) {
+  display: block; }
+
+.calendar-28 div:nth-child(8) {
+  display: block; }
+
+.calendar-28 div:nth-child(9) {
+  display: block; }
+
+.calendar-28 div:nth-child(10) {
+  display: block; }
+
+.calendar-28 div:nth-child(11) {
+  display: block; }
+
+.calendar-28 div:nth-child(12) {
+  display: block; }
+
+.calendar-28 div:nth-child(13) {
+  display: block; }
+
+.calendar-28 div:nth-child(14) {
+  display: block; }
+
+.calendar-28 div:nth-child(15) {
+  display: block; }
+
+.calendar-28 div:nth-child(16) {
+  display: block; }
+
+.calendar-28 div:nth-child(17) {
+  display: block; }
+
+.calendar-28 div:nth-child(18) {
+  display: block; }
+
+.calendar-28 div:nth-child(19) {
+  display: block; }
+
+.calendar-28 div:nth-child(20) {
+  display: block; }
+
+.calendar-28 div:nth-child(21) {
+  display: block; }
+
+.calendar-28 div:nth-child(22) {
+  display: block; }
+
+.calendar-28 div:nth-child(23) {
+  display: block; }
+
+.calendar-28 div:nth-child(24) {
+  display: block; }
+
+.calendar-28 div:nth-child(25) {
+  display: block; }
+
+.calendar-28 div:nth-child(26) {
+  display: block; }
+
+.calendar-28 div:nth-child(27) {
+  display: block; }
+
+.calendar-28 div:nth-child(28) {
+  display: block; }
+
+.calendar-29 div:nth-child(1) {
+  display: block; }
+
+.calendar-29 div:nth-child(2) {
+  display: block; }
+
+.calendar-29 div:nth-child(3) {
+  display: block; }
+
+.calendar-29 div:nth-child(4) {
+  display: block; }
+
+.calendar-29 div:nth-child(5) {
+  display: block; }
+
+.calendar-29 div:nth-child(6) {
+  display: block; }
+
+.calendar-29 div:nth-child(7) {
+  display: block; }
+
+.calendar-29 div:nth-child(8) {
+  display: block; }
+
+.calendar-29 div:nth-child(9) {
+  display: block; }
+
+.calendar-29 div:nth-child(10) {
+  display: block; }
+
+.calendar-29 div:nth-child(11) {
+  display: block; }
+
+.calendar-29 div:nth-child(12) {
+  display: block; }
+
+.calendar-29 div:nth-child(13) {
+  display: block; }
+
+.calendar-29 div:nth-child(14) {
+  display: block; }
+
+.calendar-29 div:nth-child(15) {
+  display: block; }
+
+.calendar-29 div:nth-child(16) {
+  display: block; }
+
+.calendar-29 div:nth-child(17) {
+  display: block; }
+
+.calendar-29 div:nth-child(18) {
+  display: block; }
+
+.calendar-29 div:nth-child(19) {
+  display: block; }
+
+.calendar-29 div:nth-child(20) {
+  display: block; }
+
+.calendar-29 div:nth-child(21) {
+  display: block; }
+
+.calendar-29 div:nth-child(22) {
+  display: block; }
+
+.calendar-29 div:nth-child(23) {
+  display: block; }
+
+.calendar-29 div:nth-child(24) {
+  display: block; }
+
+.calendar-29 div:nth-child(25) {
+  display: block; }
+
+.calendar-29 div:nth-child(26) {
+  display: block; }
+
+.calendar-29 div:nth-child(27) {
+  display: block; }
+
+.calendar-29 div:nth-child(28) {
+  display: block; }
+
+.calendar-29 div:nth-child(29) {
+  display: block; }
+
+.calendar-30 div:nth-child(1) {
+  display: block; }
+
+.calendar-30 div:nth-child(2) {
+  display: block; }
+
+.calendar-30 div:nth-child(3) {
+  display: block; }
+
+.calendar-30 div:nth-child(4) {
+  display: block; }
+
+.calendar-30 div:nth-child(5) {
+  display: block; }
+
+.calendar-30 div:nth-child(6) {
+  display: block; }
+
+.calendar-30 div:nth-child(7) {
+  display: block; }
+
+.calendar-30 div:nth-child(8) {
+  display: block; }
+
+.calendar-30 div:nth-child(9) {
+  display: block; }
+
+.calendar-30 div:nth-child(10) {
+  display: block; }
+
+.calendar-30 div:nth-child(11) {
+  display: block; }
+
+.calendar-30 div:nth-child(12) {
+  display: block; }
+
+.calendar-30 div:nth-child(13) {
+  display: block; }
+
+.calendar-30 div:nth-child(14) {
+  display: block; }
+
+.calendar-30 div:nth-child(15) {
+  display: block; }
+
+.calendar-30 div:nth-child(16) {
+  display: block; }
+
+.calendar-30 div:nth-child(17) {
+  display: block; }
+
+.calendar-30 div:nth-child(18) {
+  display: block; }
+
+.calendar-30 div:nth-child(19) {
+  display: block; }
+
+.calendar-30 div:nth-child(20) {
+  display: block; }
+
+.calendar-30 div:nth-child(21) {
+  display: block; }
+
+.calendar-30 div:nth-child(22) {
+  display: block; }
+
+.calendar-30 div:nth-child(23) {
+  display: block; }
+
+.calendar-30 div:nth-child(24) {
+  display: block; }
+
+.calendar-30 div:nth-child(25) {
+  display: block; }
+
+.calendar-30 div:nth-child(26) {
+  display: block; }
+
+.calendar-30 div:nth-child(27) {
+  display: block; }
+
+.calendar-30 div:nth-child(28) {
+  display: block; }
+
+.calendar-30 div:nth-child(29) {
+  display: block; }
+
+.calendar-30 div:nth-child(30) {
+  display: block; }
+
+.calendar-31 div:nth-child(1) {
+  display: block; }
+
+.calendar-31 div:nth-child(2) {
+  display: block; }
+
+.calendar-31 div:nth-child(3) {
+  display: block; }
+
+.calendar-31 div:nth-child(4) {
+  display: block; }
+
+.calendar-31 div:nth-child(5) {
+  display: block; }
+
+.calendar-31 div:nth-child(6) {
+  display: block; }
+
+.calendar-31 div:nth-child(7) {
+  display: block; }
+
+.calendar-31 div:nth-child(8) {
+  display: block; }
+
+.calendar-31 div:nth-child(9) {
+  display: block; }
+
+.calendar-31 div:nth-child(10) {
+  display: block; }
+
+.calendar-31 div:nth-child(11) {
+  display: block; }
+
+.calendar-31 div:nth-child(12) {
+  display: block; }
+
+.calendar-31 div:nth-child(13) {
+  display: block; }
+
+.calendar-31 div:nth-child(14) {
+  display: block; }
+
+.calendar-31 div:nth-child(15) {
+  display: block; }
+
+.calendar-31 div:nth-child(16) {
+  display: block; }
+
+.calendar-31 div:nth-child(17) {
+  display: block; }
+
+.calendar-31 div:nth-child(18) {
+  display: block; }
+
+.calendar-31 div:nth-child(19) {
+  display: block; }
+
+.calendar-31 div:nth-child(20) {
+  display: block; }
+
+.calendar-31 div:nth-child(21) {
+  display: block; }
+
+.calendar-31 div:nth-child(22) {
+  display: block; }
+
+.calendar-31 div:nth-child(23) {
+  display: block; }
+
+.calendar-31 div:nth-child(24) {
+  display: block; }
+
+.calendar-31 div:nth-child(25) {
+  display: block; }
+
+.calendar-31 div:nth-child(26) {
+  display: block; }
+
+.calendar-31 div:nth-child(27) {
+  display: block; }
+
+.calendar-31 div:nth-child(28) {
+  display: block; }
+
+.calendar-31 div:nth-child(29) {
+  display: block; }
+
+.calendar-31 div:nth-child(30) {
+  display: block; }
+
+.calendar-31 div:nth-child(31) {
+  display: block; }
+
+.calendar-mon :first-child {
   margin-left: 0px; }
 
-.calendar-day div:first-child {
+.calendar-tue :first-child {
   margin-left: 101px; }
 
-.calendar-day div:first-child {
+.calendar-wed :first-child {
   margin-left: 202px; }
 
-.calendar-day div:first-child {
+.calendar-thu :first-child {
   margin-left: 303px; }
 
-.calendar-day div:first-child {
+.calendar-fri :first-child {
   margin-left: 404px; }
 
-.calendar-day div:first-child {
+.calendar-sat :first-child {
   margin-left: 505px; }
 
-.calendar-day div:first-child {
+.calendar-sun :first-child {
   margin-left: 606px; }
 
 /*# sourceMappingURL=main.css.map */
